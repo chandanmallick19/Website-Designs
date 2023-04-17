@@ -1,7 +1,5 @@
-// Swiper js
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  // grabCursor: true,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
@@ -14,7 +12,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// Nav open close
 const body = document.querySelector('body'),
       navMenu = body.querySelector('.menu-content'),
       navOpenBtn = body.querySelector('.navOpen-btn'),
@@ -34,7 +31,6 @@ if(navMenu && navCloseBtn){
   })
 }
 
-// Change header bg color
 window.addEventListener("scroll", () => {
   const scrollY = window.pageYOffset;
 
@@ -44,7 +40,6 @@ window.addEventListener("scroll", () => {
     document.querySelector("header").classList.remove("header-active");
   }
 
-  // Scroll up button
   const scrollUpBtn = document.querySelector('.scrollUp-btn');
 
   if(scrollY > 250){
@@ -54,7 +49,6 @@ window.addEventListener("scroll", () => {
   }
   
   
-  // Nav link indicator
 
   const sections = document.querySelectorAll('section[id]');
   sections.forEach(section =>{
@@ -76,7 +70,6 @@ window.addEventListener("scroll", () => {
 })  
   
   
-  // Scroll Reveal Animation
   const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
