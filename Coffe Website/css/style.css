@@ -1,14 +1,11 @@
-/* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 html{
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
-:root{
-/* Font Sizes & Family */
-/* if we set html's font size 62.5% then 1rem = 10px */
 
+:root{
 --body-font: 'Poppins', sans-serif;
 
 --big-font: 4rem;
@@ -20,12 +17,10 @@ html{
 --small-font: 1.4rem;
 --smaller-font: 1.3rem;
 
-/* Font Weight ***/
 --font-regular: 400;
 --font-medium: 500;
 --font-semi-bold: 600;
 
-/* Color Variables */
 --primary-color: #C87E4F;
 --primary-color-hover: #C2703D;
 --text-color: #333;
@@ -34,17 +29,14 @@ html{
 --white-color: #FFF;
 --section-bg: #2C3034;
 
-/* z-index */
 --z-overlay: 10;
 --z-fixed: 100;
 
-/* transition */
 --tran-0-2: 0.2s;
 --tran-0-3: 0.3s;
 --tran-0-5: 0.5s;
 }
 
-/*Font sizes For Small Screen 968px */
 @media screen and (max-width: 990px) {
 :root {
   --big-font: 3.5rem;
@@ -59,7 +51,6 @@ html{
 }
 
 
-/* Pre-CSS */
 *{
   margin: 0;
   padding: 0;
@@ -70,7 +61,6 @@ body{
   background-color: var(--white-color);
 }
 
-/* Custom Scrollbar */
 ::selection{
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -114,7 +104,6 @@ img{
   object-fit: cover;
 }
 
-/* Reusuable CSS */
 .section{
   padding: 7rem 2rem;
 }
@@ -165,7 +154,6 @@ img{
 .section-description{
   padding: 0 16rem;
 }
-/* Header */
 .header{
   position: fixed;
   top: 0;
@@ -181,7 +169,6 @@ img{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* nav */
 .nav{
   position: relative;
   height: 100%;
@@ -245,7 +232,6 @@ img{
   display: none;
 }
 
-/* nav responsive */
 @media screen and (max-width: 768px) {
   .contact-content{
     display: none;
@@ -304,17 +290,17 @@ img{
 }
 
 
-/* Home */
 .home{
   height: 100vh;
   width: 100%;
-  /* background-color: red; */
 }
+
 .swiper-slide{
   position: relative;
   height: 100vh;
   width: 100%;
 }
+
 .home .swiper-slide::before{
   content: '';
   position: absolute;
@@ -325,12 +311,12 @@ img{
   background-color: rgba(0, 0, 0, 0.4);
   z-index: var(--z-overlay);
 }
+
 .home-img{
   height: 100%;
   width: 100%;
 }
 
-/* swiper button */
 .swiper-navBtn{
   height: 5rem;
   width: 5rem;
@@ -341,13 +327,16 @@ img{
   opacity: 0;
   visibility: visible;
 }
+
 .home:hover .swiper-navBtn,
 .review:hover .swiper-navBtn{
   opacity: 1;
 }
+
 .swiper-navBtn:hover{
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .swiper-navBtn::after,
 .swiper-navBtn::before{
   font-size: 2rem;
@@ -356,6 +345,7 @@ img{
 .swiper-button-next{
   right: 16rem;
 }
+
 .swiper-button-prev{
   left: 16rem;
 }
@@ -368,10 +358,12 @@ img{
   margin-bottom: 2rem;
   visibility: hidden;
 }
+
 .swiper-pagination-bullet-active{
   border: 3px solid var(--white-color);
   background-color: var(--primary-color);
 }
+
 .home-details{
   position: absolute;
   top: 50%;
@@ -396,13 +388,12 @@ img{
   font-weight: var(--font-semi-bold);
 }
 
-
-/* About */
 .about .content-subtitle,
 .about .content-title,
 .about .content-description{
   text-align: left;
 }
+
 .about-content{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -410,12 +401,14 @@ img{
   align-items: center;
   padding: 0 5rem;
 }
+
 .about-imageContent{
   position: relative;
   max-width: 400px;
   height: 450px;
   border: 6px solid var(--section-bg);
 }
+
 .aboutImg-textBox{
   position: absolute;
   bottom: 2rem;
@@ -427,10 +420,12 @@ img{
   border: 6px solid var(--section-bg);
   background-color: var(--white-color);
 }
+
 .aboutImg-textBox .content-description{
   text-align: center;
   margin-bottom: 0;
 }
+
 .heart-icon{
   position: absolute;
   left: -1.9rem;
@@ -477,7 +472,6 @@ img{
   margin-left: 4px;
 }
 
-/* Menu */
 .menu{
   background-color: var(--section-bg);
 }
@@ -546,7 +540,6 @@ img{
   border-bottom: none;
 }
 
-/* Brand */
 .brand-images{
   display: grid;
   align-items: center;
@@ -566,7 +559,6 @@ img{
   opacity: 1;
 }
 
-/* Review */
 .review{
   background-color: #f2f2f2;
 }
@@ -603,7 +595,6 @@ img{
   font-weight: var(--font-medium);
 }
 
-/* swiper btn */
 .review .swiper-navBtn{
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -619,7 +610,6 @@ img{
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Newsletter */
 .newsletter .logo-icon,
 .newsletter .logo-text,
 .newsletter .section-description{
@@ -663,7 +653,6 @@ img{
   display: flex;
 }
 
-/* Footer */
 .footer{
   padding: 4rem 2rem 3rem;
   background-color: var(--section-bg);
@@ -731,8 +720,6 @@ img{
   color: rgba(255, 255, 255, 0.8);;
 }
 
-
-/* Scroll Up */
 .scrollUp-btn{
   position: fixed;
   bottom: -30%;
@@ -760,7 +747,6 @@ img{
   opacity: 1;
 }
 
-/* Responive media */
 @media screen and (max-width: 1150px) {
   .swiper-button-prev {
     left: 10rem;
