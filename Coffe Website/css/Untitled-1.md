@@ -89,4 +89,4 @@ FAQs
 Private Policy
 Help Us
 
-&#169; CodingLab. All rigths reserved
+&#169;
