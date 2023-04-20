@@ -404,7 +404,6 @@ section .button button:hover {
   color: #fff;
 }
 
-/* Contact Me CSS */
 .contact {
   background: #F0F8FF;
 }
@@ -420,7 +419,6 @@ section .button button:hover {
   margin: auto;
 }
 
-/* Footer CSS */
 footer {
   background: #4070f4;
   padding: 15px 0;
