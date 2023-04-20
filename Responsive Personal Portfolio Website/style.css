@@ -441,7 +441,6 @@ footer .text span a:hover {
   text-decoration: underline;
 }
 
-/* Scroll TO Top Button CSS */
 .scroll-button a {
   position: fixed;
   bottom: 20px;
@@ -456,7 +455,6 @@ footer .text span a:hover {
   display: none;
 }
 
-/* Responsive Media Query */
 @media (max-width: 1190px) {
   section .content {
     width: 85%;
